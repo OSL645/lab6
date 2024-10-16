@@ -11,4 +11,4 @@
 # Using the read command, prompt the user to enter their age. Store the input in a variable called age
 
 
-# Use the echo command to display the following message: "Hello, name - You are age years old."
+# Use the echo command to display the following message: "Hello name - You are age years old."

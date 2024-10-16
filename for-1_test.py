@@ -22,3 +22,5 @@ def for1test():
     result.stdin.close()
     result.stdout.close()
     result.stderr.close()
+
+for1test()

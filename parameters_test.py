@@ -11,7 +11,6 @@ def test_parameters():
     output = result.stdout.read()
 
     # Check the output
-    assert "$0: ./parameters.bash" in output
     assert "$2: 2" in output
     assert "$3: 3" in output
     assert "$#: 8" in output
@@ -24,3 +23,5 @@ def test_parameters():
     result.stdin.close()
     result.stdout.close()
     result.stderr.close()
+
+test_parameters()

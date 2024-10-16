@@ -14,3 +14,10 @@ def test_command_substitution():
     assert "MY ACCOUNT INFORMATION" in output
     assert "Username: codespace" in output
     assert "Current Directory: /workspaces" in output
+
+    # Close the process
+    result.stdin.close()
+    result.stdout.close()
+    result.stderr.close()
+
+test_command_substitution()

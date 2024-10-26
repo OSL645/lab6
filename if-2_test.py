@@ -7,6 +7,13 @@ def if2test():
     # Run the bash script
     result = subprocess.Popen(['bash', 'if-2.bash'], stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
 
+   # Provide the input
+    result.stdin.write("5\n")
+    result.stdin.flush()
+
+    result.stdin.write("2\n")
+    result.stdin.flush()
+
     # Get the output
     output = result.stdout.read()
 

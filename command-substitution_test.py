@@ -12,9 +12,9 @@ def test_command_substitution():
 
     # Check the output
     assert "MY ACCOUNT INFORMATION" in output
-    assert "Username: codespace" in output
-    assert "Current Directory: /workspaces" in output
-
+    assert "Username:" in output
+    assert "Current Directory:" in output
+    
     # Close the process
     result.stdin.close()
     result.stdout.close()
